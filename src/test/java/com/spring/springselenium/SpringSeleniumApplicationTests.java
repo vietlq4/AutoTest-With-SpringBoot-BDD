@@ -24,8 +24,7 @@ class SpringSeleniumApplicationTests {
 	void contextLoads() {
 		//System.out.println(this.defaultValue);
         //this.user.printDetails();
-		Faker faker = new Faker();
-		System.out.println(faker.name().firstName());
+		this.user.printDetails();
 	}
 
 

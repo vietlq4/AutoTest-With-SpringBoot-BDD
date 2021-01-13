@@ -10,26 +10,5 @@ import java.util.List;
 
 @SpringBootTest
 class SpringSeleniumApplicationTests {
-	@Autowired
-	private User user;
 
-    @Value("${fruits}")
-	private List<String> fruits;
-
-    @Value("${DEFAULT_VALUE:default value}")
-	private String defaultValue;
-
-
-	@Test
-	void contextLoads() {
-		//System.out.println(this.defaultValue);
-        //this.user.printDetails();
-		this.user.printDetails();
-	}
-
-
-//	Address address = new Address();
-//	Salary salary = new Salary();
-//	User user= new User(address,salary);
-//		user.printDetails();
 }

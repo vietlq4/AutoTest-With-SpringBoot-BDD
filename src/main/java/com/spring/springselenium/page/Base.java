@@ -13,11 +13,11 @@ public abstract class Base {
     protected WebDriver driver;
 
     @Autowired
-    protected WebDriverWait webDriverWait;
+    protected WebDriverWait wait;
 
     @PostConstruct
     private void init(){
-        PageFactory.initElements(this.driver,this.webDriverWait);
+        PageFactory.initElements(this.driver,this);
     }
     public abstract boolean isAt();
 }

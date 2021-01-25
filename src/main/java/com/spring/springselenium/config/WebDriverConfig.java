@@ -14,8 +14,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 @Profile("!remote")
 public class WebDriverConfig {
-    @Value("${default.timeout:30}")
-    private int timeOut;
+
 
     @Bean
     @ConditionalOnMissingBean
@@ -29,8 +28,5 @@ public class WebDriverConfig {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
-    @Bean
-    public WebDriverWait webDriverWait(WebDriver driver){
-        return new WebDriverWait(driver,this.timeOut);
-    }
+
 }

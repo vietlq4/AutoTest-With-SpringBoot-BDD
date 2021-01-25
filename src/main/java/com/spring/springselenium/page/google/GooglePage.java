@@ -3,9 +3,13 @@ package com.spring.springselenium.page.google;
 import com.spring.springselenium.page.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Lazy
+@Scope("prototype")
 public class GooglePage extends Base {
 
 

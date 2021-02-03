@@ -1,17 +1,13 @@
 package com.spring.springselenium.page.google;
 
+import com.spring.springselenium.zaitenllc.anotation.PageFragment;
 import com.spring.springselenium.page.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
-@Lazy
-@Scope("prototype")
+@PageFragment
 public class SearchResult extends Base {
     @FindBy(xpath="//cite")
     private List<WebElement> results;
